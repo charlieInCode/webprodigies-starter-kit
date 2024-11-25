@@ -1,6 +1,6 @@
 export type AuthFormProps = {
     id: string
-    type: "email" | "text" | "password"
+    type?: "email" | "text" | "password"
     inputType: "select" | "input"
     options?: { value: string; label: string; id: string }[]
     label?: string

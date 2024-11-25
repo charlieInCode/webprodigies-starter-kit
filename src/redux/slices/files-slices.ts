@@ -1,3 +1,0 @@
-type InitialStateProps = {
-    files: []
-}

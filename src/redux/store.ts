@@ -2,9 +2,10 @@
 "use client"
 import { combineReducers, configureStore } from "@reduxjs/toolkit"
 import { TypedUseSelectorHook, useSelector } from "react-redux"
+import ParseResultReducer from "./slices/result-slices"
 
 const rootReducer = combineReducers({
-    //add all your reducers here
+    ParseResultReducer,
 })
 
 export const store = configureStore({

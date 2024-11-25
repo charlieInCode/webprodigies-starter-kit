@@ -30,10 +30,14 @@ export default function RootLayout({
 
     return (
         <ClerkProvider>
-            <html lang="en">
+            <html lang="en" suppressHydrationWarning>
                 <body className={jakarta.className}>
                     <NextTopLoader showSpinner={false} color="#7c3aed" />
-                    <ThemeProvider attribute="class" disableTransitionOnChange>
+                    <ThemeProvider
+                        attribute="class"
+                        defaultTheme="light"
+                        disableTransitionOnChange
+                    >
                         <ReduxProvider>
                             <ReactQueryProvider>
                                 {isMaintenance ? <MaintenancePage /> : children}

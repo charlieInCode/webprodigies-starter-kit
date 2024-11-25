@@ -1,8 +1,5 @@
 "use client"
 
-import { Frame } from "lucide-react"
-import * as React from "react"
-
 import {
     Sidebar,
     SidebarContent,
@@ -23,11 +20,11 @@ const data = {
         avatar: "/avatars/shadcn.jpg",
     },
     links: [
-        {
-            name: "Design Engineering",
-            url: "/dashboard",
-            icon: Frame,
-        },
+        // {
+        //     name: "Design Engineering",
+        //     url: "/dashboard",
+        //     icon: Frame,
+        // },
     ],
 }
 
